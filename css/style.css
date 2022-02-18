@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.menu {
+    display: flex;
+    
+}
+.logo {
+    height: 150px;
+    margin-left: 30px;
+}
+.header ul {
+    width:auto;
+    display: flex;
+
+}
+.header li{
+    display: block;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius:12px ;
+    margin: 40px;
+    background-color: #343a40;
+
+}
+.header a {
+    text-decoration: none;
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+    color: aliceblue;
+    padding: 15px 15px;
+}
+/* header above  */
+
