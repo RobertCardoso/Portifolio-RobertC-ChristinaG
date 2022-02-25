@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
+            alt="austin coding academy logo">
+        <nav>
+            <ul class="menu">
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="resume" href="resume.html">Resume</a></li>
+                <li><a class="about" href="about.html">About Me</a> </li>
+                <li><a class="contact" href="contact.html">Contact Me</a> </li>
+                <li><a class="gallery" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="para">
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <img src="images/mountains_front.png" id="mountains_front">
+        <form action="results.html" method="GET"  enctype="multipart/form-data">
+            <h1>Contact Form 
+                <span>Please fill all the texts in the fields.</span>
+            </h1>
+            <div>
+                <span>Name :</span>
+                <input id="name" type="text" name="name" placeholder="Your Full Name" />
+            </div>
+            
+            <div>
+                <span>Your Email :</span>
+                <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+            </div>
     
+            <div>
+                <span>Message :</span>
+                <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+            </div> 
+    
+            <div class="hear">
+                <span>How did you hear about me:</span><select name="selection">
+                    <option value="Classmate">Classmate</option>
+                    <option value="Resume Submission">Resume Submission</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Coding Academy Rec">Coding Academy Rec</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+    
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    
+             
+        </form>
+    </section>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
