@@ -127,3 +127,132 @@ section img#mountains_front{
     margin: 20px;
     width: 350px;
 }
+
+/* landing page stops here */
+
+form{
+    margin-left:auto;
+    margin-right:auto;
+    background: #e2dfee;
+    padding: 0px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+    border-radius: 6px;
+    z-index: 1000000;
+    min-width: 500px;
+
+}
+form > h1 {
+    font-size: 60px;
+    padding: 10px;
+    display: block;
+    border-bottom:1px solid #e4e4e4;
+    margin: 10px;
+    color: rgba(18, 10, 90, 0.616);
+}
+form  h1 span {
+    display: block;
+    font-size: 20px;
+    color: rgba(7, 2, 51, 0.699);
+    
+}
+form span {
+    color:rgba(24, 13, 82, 0.973);
+    font-size: 20px;
+    margin: 05px;
+    
+}
+form label{
+    margin-left: 20px;
+}
+form input[type="text"], input[type="email"], textarea, select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-right: 8px;
+    margin-top: 10px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 80%;
+    font-size: 15px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+    margin-left: 20px;
+}
+input[type="date"] {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-left: 20px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    font-size: 15px;
+    line-height:15px;
+}
+form button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+form  button:hover {
+    background: #2b1055;;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+form span {
+    display: block;
+    margin-left: 8px;
+}
+textarea#message{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 380px;
+    max-width: 380px;
+}
+div#results{
+    z-index: 10000;
+    font-size: 50px;
+    border: 2px solid linear-gradient(#2b1055, #7597de);
+    border-radius: 10px;
+    padding: 50px;
+    background:linear-gradient(#2b1055, #7597de);
+    color: white;
+}
+a#Goback {
+    text-decoration: none;
+    background: #E27575;
+    border: none;
+    padding: 20px 50px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 40px;
+    z-index: 10000;
+}
+a#Goback:hover{
+    background: #2b1055;;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+section#resultssec{
+    display: flex;
+    flex-direction: column;
+}
