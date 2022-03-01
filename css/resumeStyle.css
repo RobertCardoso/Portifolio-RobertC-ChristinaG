@@ -115,11 +115,10 @@ body{
 
 .resume-container {
     background-color: #ebe3fa;
-    width: 750px;
+    width: 375px;
     height: 54.9%;
     display: flex;
-    justify-content: space-around;
-    margin: 3% 0 0 30%;
+    margin:0 0 0 0;
 
 }
 
@@ -146,7 +145,7 @@ body{
 
 h1 {
     font-family: 'Noto Serif', serif;
-    font-size: 35px;
+    font-size: 15.5px;
 }
 
 h2 {
@@ -171,7 +170,7 @@ h5{
 }
 
 .right-container {
-   
+    width: 115px;
     margin: 0 10px 0 0;
 }
 
@@ -193,21 +192,21 @@ h5{
 }
 
 .right-c {
-    height: 200px;
+    height: 100px;
     margin: 0 0 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .c-1{
-    width: 230px;
+    width: 115px;
     margin: 0;
     color: #615181;
 }
 
 .c-2{
     display: list-item;
-    width: 230px;
+    width: 115px;
     margin: 0;
     color: #615181;
 }

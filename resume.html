@@ -8,6 +8,8 @@
     <title>Resume</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/resumeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 950px)">
+
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,19 +20,22 @@
 </head>
 
 <body>
-<header class="header">
-    <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
-        alt="austin coding academy logo">
-    <nav>
-        <ul class="menu">
-            <li><a class="home" href="index.html">Home</a></li>
-            <li><a class="resume" href="resume.html">Resume</a></li>
-            <li><a class="about" href="about.html">About Me</a> </li>
-            <li><a class="contact" href="contact.html">Contact Me</a> </li>
-            <li><a class="gallery" href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="header">
+        <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
+            alt="austin coding academy logo">
+        
+
+        <button id="nav-t" class="nav-t" aria-controls="mymenu" aria-expanded="false"><span class="sr-only"></span></button>
+        <nav>
+            <ul class="menu" id="mymenu" data-visible="false">
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="resume" href="resume.html">Resume</a></li>
+                <li><a class="about" href="index.html#sec">About Me</a> </li>
+                <li><a class="contact" href="contact.html">Contact Me</a> </li>
+                <li><a class="gallery" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 <section class="para">
     <img src="images/stars.png" id="stars">
     <img src="images/moon.png" id="moon">
@@ -48,68 +53,68 @@
                     <img class="profile-pic" src="../images/resume-profile-pic.jpg">
                     <section class="left-info">
                         <article class="left-bottom-info">
-                            <h1>LOREM:</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+                            <h1 id="rh1">LOREM:</h1>
+                            <h2 id="rh2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
                         </article>
                         <article class="left-bottom-info">
-                            <h1>LOREM:</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+                            <h1 id="rh1">LOREM:</h1>
+                            <h2 id="rh2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
                         </article>
                     </section>
                 </section>
 
                 <section class="right-container">
                     <section class="right-a">
-                        <h4>LOREM IPSUM</h4>
+                        <h4  id="rh4">LOREM IPSUM</h4>
                     </section>
 
                     <section class="right-b">
-                        <h5>LOREM</h5>
+                        <h5 id="rh5">LOREM</h5>
                     </section>
 
                     <section class="a-divide"></section>
 
                     <section class="right-c">
                         <section class="c-1">
-                            <h1>LOREM</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
+                            <h1 id="rh1">LOREM</h1>
+                            <h2 id="rh2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
                         </section>
                         <section class="c-2">
-                            <h1>LOREM</h1>
+                            <h1 id="rh1">LOREM</h1>
                             <ul>
-                                <li>Lorem</li>
-                                <li>Ipsum</li>
-                                <li>Dolor</li>
+                                <li id="rli">Lorem</li>
+                                <li id="rli">Ipsum</li>
+                                <li id="rli">Dolor</li>
                             </ul>
                         </section>
                     </section>
 
                     <section class="right-c">
                         <section class="c-1">
-                            <h1>LOREM</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
+                            <h1 id="rh1">LOREM</h1>
+                            <h2 id="rh2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
                         </section>
                         <section class="c-2">
-                            <h1>LOREM</h1>
-                            <ul>
-                                <li>Lorem</li>
-                                <li>Ipsum</li>
-                                <li>Dolor</li>
+                            <h1 id="rh1">LOREM</h1>
+                            <ul id="rul">
+                                <li id="rli">Lorem</li>
+                                <li id="rli">Ipsum</li>
+                                <li id="rli">Dolor</li>
                             </ul>
                         </section>
                     </section>
 
                     <section class="right-c">
                         <section class="c-1">
-                            <h1>LOREM</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
+                            <h1 id="rh1">LOREM</h1>
+                            <h2 id="rh2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
                         </section>
                         <section class="c-2">
-                            <h1>LOREM</h1>
-                            <ul>
-                                <li>Lorem</li>
-                                <li>Ipsum</li>
-                                <li>Dolor</li>
+                            <h1 id="rh1">LOREM</h1>
+                            <ul id="rul">
+                                <li id="rli">Lorem</li>
+                                <li id="rli">Ipsum</li>
+                                <li id="rli">Dolor</li>
                             </ul>
                         </section>
                     </section>

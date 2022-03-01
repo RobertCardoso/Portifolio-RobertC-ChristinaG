@@ -8,6 +8,7 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/galleryStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 950px)">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +19,17 @@
 </head>
 
 <body>
-<header class="header">
+  <header class="header">
     <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
         alt="austin coding academy logo">
+    
+
+    <button id="nav-t" class="nav-t" aria-controls="mymenu" aria-expanded="false"><span class="sr-only"></span></button>
     <nav>
-        <ul class="menu">
+        <ul class="menu" id="mymenu" data-visible="false">
             <li><a class="home" href="index.html">Home</a></li>
             <li><a class="resume" href="resume.html">Resume</a></li>
-            <li><a class="about" href="about.html">About Me</a> </li>
+            <li><a class="about" href="index.html#sec">About Me</a> </li>
             <li><a class="contact" href="contact.html">Contact Me</a> </li>
             <li><a class="gallery" href="gallery.html">Gallery</a></li>
         </ul>
@@ -47,7 +51,7 @@
 
             <div class="item">
               <a href="https://robertcardoso.github.io/calculator-app-101/">
-                <div class="polaroid"><img src="../images/gallery1.jpg">
+                <div class="polaroid"><img src="images/gallery1.jpg">
                   <div class="caption">Calculator App by Robert Cardoso </div>
                 </div>
               </a>
@@ -55,7 +59,7 @@
           
             <div class="item">
               <a href="https://robertcardoso.github.io/TicTacToe-101/">
-                <div class="polaroid"><img src="../images/gallery2.jpg">
+                <div class="polaroid"><img src="images/gallery2.jpg">
                   <div class="caption">Tic Tac Toe by Robert Cardoso</div>
                 </div>
               </a>
@@ -63,7 +67,7 @@
           
             <div class="item">
               <a href="https://robertcardoso.github.io/TicTacToe-101/">
-                <div class="polaroid"><img src="../images/gallery3.jpg">
+                <div class="polaroid"><img src="images/gallery3.jpg">
                   <div class="caption">First Responsive Website by Christina Goo</div>
                 </div>
               </a>
@@ -71,7 +75,7 @@
           
             <div class="item">
               <a href="https://christinagcode.github.io/ACA_web101_christina_g/resume/resume.html">
-                <div class="polaroid"><img src="../images/gallery4.jpg">
+                <div class="polaroid"><img src="images/gallery4.jpg">
                   <div class="caption">Mock Up Resume by Christina Goo</div>
                 </div>
               </a>
@@ -85,7 +89,7 @@
 
 
 <footer></footer>
-<script src="../JS/galleryScript.js"></script>
+<script src="JS/script.js"></script>
 </body>
 
 
