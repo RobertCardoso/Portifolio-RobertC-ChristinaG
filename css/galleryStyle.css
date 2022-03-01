@@ -124,18 +124,23 @@ h2 {
 
 
 
-
-
-
-
+.gallery-container {
+  height: 600px;
+}
 
 img {
     max-width: 100%;
     height: auto;
   }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
   .wrapper {
     width: 100%;
-    padding: 0 2rem;
+    padding: 80px0 0 0;
     text-align: center;
   }
   .polaroid {
