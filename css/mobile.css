@@ -31,6 +31,8 @@ body{
 }
 .nav-t[area-expended="true"] {
     background-image: url("../images/menuclose.PNG");
+    background-color: transparent;
+
     
 }
 
@@ -64,6 +66,7 @@ body{
     position: absolute;
     z-index: 9999999;
     background: url("../images/menuicon.PNG");
+    background-color: transparent;
     width: 3rem;
     background-repeat: no-repeat;
     aspect-ratio: 1;
@@ -136,15 +139,14 @@ img#moon{
     display: none;
 }
 body {
-    background-image: url("https://github.com/RobertCardoso/Portifolio-RobertC-ChristinaG/images/backimg.jpg");
+    background-image: url("../images/backimg.jpg");
+    background-color: #cccccc;
     background-size: cover ;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 section::before{
-    display:;
-
 }
 
 form {
