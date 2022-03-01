@@ -17,6 +17,9 @@ body{
 }
 .menu {
     display: flex;
+    width:auto;
+    
+    
     
 }
 .header .logo {
@@ -24,10 +27,7 @@ body{
     margin-left: 30px;
 }
 .header ul {
-    width:auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .header ul li{
     margin-left: 20px;
@@ -50,8 +50,15 @@ body{
     background: #fff;
     color: #2b1055;
 }
+.nav-t {
+    display: none;
+}
+
+
 
 /* header above  */
+
+
 section {
     position: relative;
     width: 100%;
@@ -63,7 +70,7 @@ section {
     overflow: hidden;
 }
 section::before{
-    content: '';
+    content:'';
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -84,6 +91,7 @@ section img#moon {
 }
 section img#mountains_front{
     z-index: 10;
+  
 }
 #text{
     position: absolute;
@@ -140,7 +148,8 @@ form{
     text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
     border-radius: 6px;
-    z-index: 1000000;
+    position: relative;
+    z-index: 23;
     min-width: 500px;
 
 }
@@ -152,12 +161,7 @@ form > h1 {
     margin: 10px;
     color: rgba(18, 10, 90, 0.616);
 }
-form  h1 span {
-    display: block;
-    font-size: 20px;
-    color: rgba(7, 2, 51, 0.699);
-    
-}
+
 form span {
     color:rgba(24, 13, 82, 0.973);
     font-size: 20px;
@@ -226,10 +230,10 @@ textarea#message{
 div#results{
     z-index: 10000;
     font-size: 50px;
-    border: 2px solid linear-gradient(#2b1055, #7597de);
-    border-radius: 10px;
-    padding: 50px;
-    background:linear-gradient(#2b1055, #7597de);
+    border: 20px solid linear-gradient(#2b1055, #7597de);
+    border-radius: 12px;
+    padding: 20px;
+    background:#7597de;
     color: white;
 }
 a#Goback {
@@ -255,4 +259,31 @@ a#Goback:hover{
 section#resultssec{
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1280px){
+    section::before{
+        
+        height: 130px;
+    }
+    
+    /* img#stars {
+        display: none;
+    }
+    img#mountains_front{
+        display: none;
+    }
+    img#mountains_behind{
+        display: none;
+    }
+    img#moon{
+        display: none;
+    }
+    body {
+        background-image: url("/images/backimg.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+      
+    } */
 }

@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 950px)">
+
 </head>
 
 <body>
     <header class="header">
         <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
             alt="austin coding academy logo">
+        
+
+        <button id="nav-t" class="nav-t" aria-controls="mymenu" aria-expanded="false"><span class="sr-only"></span></button>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="mymenu" data-visible="false">
                 <li><a class="home" href="index.html">Home</a></li>
                 <li><a class="resume" href="resume.html">Resume</a></li>
                 <li><a class="about" href="about.html">About Me</a> </li>

@@ -4,7 +4,7 @@ let mountains_behind = document.getElementById('mountains_behind')
 let text = document.getElementById('text')
 let btn = document.getElementById('btn')
 let mountains_front = document.getElementById('mountains_front')
-let header = document.querySelector('header')
+let header = document.querySelector('header');
 
 
 window.addEventListener('scroll', function(){
@@ -17,14 +17,29 @@ window.addEventListener('scroll', function(){
     text.style.marginTop = value * 0.5 + 'px';
     btn.style.marginTop = value * 1 + 'px';
     header.style.top = value * 0.5 + 'px';
-
-
 }
 )
 
-const placeForResults = document.getElementById("results")
+const placeForResults = document.getElementById("results");
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
   placeForResults.append(`${name} : ${value}`)
   placeForResults.append(document.createElement("br"))
-})
+});
+
+
+const primaryNav = document.querySelector(".menu");
+const navToggle = document.querySelector(".nav-t");
+
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
+  
+  
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", true);
+    navToggle.setAttribute("area-expended", true);
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false)
+    navToggle.setAttribute("area-expended", false);
+  }
+});
