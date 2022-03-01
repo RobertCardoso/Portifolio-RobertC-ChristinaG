@@ -1,0 +1,232 @@
+body{
+    background:linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 10000;
+
+}
+.menu {
+    display: flex;
+    
+}
+.header .logo {
+    height: 130px;
+    margin-left: 30px;
+}
+.header ul {
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li{
+    margin-left: 20px;
+}
+.header ul li a {
+    text-decoration: none;
+    font-family: 'Redressed', cursive;
+    padding: 6px 15px;
+    color: #fff;
+    padding: 15px 15px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.header ul li a:hover,
+.header ul li a.home
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+/* header above  */
+.para {
+    position: relative;
+    width: 100%;
+    height: 106.5vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.para::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 100;
+}
+.para img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.para img#moon {
+    mix-blend-mode: screen;
+}
+.para img#mountains_front{
+    z-index: 10;
+}
+#text{
+    position: absolute;
+    right: -10px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5.5vw;
+    z-index: 9;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.middle-background {
+    background-color: #1D0523;    
+}
+
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.gallery-container {
+  height: 600px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+  .wrapper {
+    width: 100%;
+    padding: 80px0 0 0;
+    text-align: center;
+  }
+  .polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
+  }
+  .caption {
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 2em;
+  }
+  .item {
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+  }
+  .item .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+  .item:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+  .item:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+4) .polaroid:before {
+    transform: rotate(4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  }
+  .item:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+3) .polaroid:before {
+    transform: rotate(-4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  }
+  .item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
+  }
+  .item:hover .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+  }
+  
