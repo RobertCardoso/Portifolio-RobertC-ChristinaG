@@ -83,9 +83,10 @@ body{
     position: absolute;
     right: 0px;
     top: 300px;
-    color: #fff;
+    color: black;
     white-space: nowrap;
     font-size: 13.5vw;
+    font-weight: bold;
     z-index: 9;
 }
 #btn{
@@ -93,8 +94,8 @@ body{
     display: inline-block;
     padding: 10px 30px;
     border-radius: 100px;
-    background: #fff;
-    color: #2b1055;
+    background: black;
+    color: white;
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
@@ -139,7 +140,7 @@ img#moon{
     display: none;
 }
 body {
-    background-image: url("../images/backimg.jpg");
+    background-image: url("../images/backimgmobile.jpg");
     background-color: #cccccc;
     background-size: cover ;
     background-position: top;
@@ -225,7 +226,7 @@ a#Goback {
 
 }
 
-.profile-pic {
+.prof-pic {
     margin-bottom: -4px;
     width: 105px;
    
