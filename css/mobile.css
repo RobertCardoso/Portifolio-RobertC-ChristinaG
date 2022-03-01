@@ -30,7 +30,7 @@ body{
     transform: translateX(0%);
 }
 .nav-t[area-expended="true"] {
-    background-image: url("../images/menuclose.PNG");
+    background-image: url("../images/menuclose.png");
     background-color: transparent;
 
     
@@ -65,7 +65,7 @@ body{
     display: block;
     position: absolute;
     z-index: 9999999;
-    background: url("../images/menuicon.PNG");
+    background: url("../images/menuicon.png");
     background-color: transparent;
     width: 3rem;
     background-repeat: no-repeat;
