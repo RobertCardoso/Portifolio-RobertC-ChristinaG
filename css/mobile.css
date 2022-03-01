@@ -30,7 +30,7 @@ body{
     transform: translateX(0%);
 }
 .nav-t[area-expended="true"] {
-    background-image: url(/images/menuclose.png);
+    background-image: url("../images/menuclose.PNG");
     
 }
 
@@ -63,7 +63,7 @@ body{
     display: block;
     position: absolute;
     z-index: 9999999;
-    background: url("/images/menuicon.png");
+    background: url("../images/menuicon.PNG");
     width: 3rem;
     background-repeat: no-repeat;
     aspect-ratio: 1;
@@ -136,7 +136,7 @@ img#moon{
     display: none;
 }
 body {
-    background-image: url("/images/backimg.jpg");
+    background-image: url("../images/backimg.JPG");
     background-size: cover ;
     background-position: top;
     background-repeat: no-repeat;
