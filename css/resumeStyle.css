@@ -1,8 +1,8 @@
 body{
     background:linear-gradient(#2b1055, #7597de);
-    min-height: 100vh;
     overflow-x: hidden;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -17,9 +17,6 @@ body{
 }
 .menu {
     display: flex;
-    width:auto;
-    
-    
     
 }
 .header .logo {
@@ -27,13 +24,13 @@ body{
     margin-left: 30px;
 }
 .header ul {
-    
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header ul li{
     margin-left: 20px;
-    
-    
-
 }
 .header ul li a {
     text-decoration: none;
@@ -50,16 +47,9 @@ body{
     background: #fff;
     color: #2b1055;
 }
-.nav-t {
-    display: none;
-}
-
-
 
 /* header above  */
-
-
-section {
+.para {
     position: relative;
     width: 100%;
     height: 106.5vh;
@@ -69,8 +59,8 @@ section {
     align-items: center;
     overflow: hidden;
 }
-section::before{
-    content:'';
+.para::before{
+    content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -78,7 +68,7 @@ section::before{
     background: linear-gradient(to top,#1c0522,transparent);
     z-index: 100;
 }
-section img {
+.para img {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,93 +76,11 @@ section img {
     object-fit: cover;
     pointer-events: none;
 }
-section img#moon {
+.para img#moon {
     mix-blend-mode: screen;
 }
-section img#mountains_front{
+.para img#mountains_front{
     z-index: 10;
-  
-}
-#text{
-    position: absolute;
-    right: -10px;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 5.5vw;
-    z-index: 9;
-}
-#btn{
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 40px;
-    background: #fff;
-    color: #2b1055;
-    font-size: 1.5em;
-    z-index: 9;
-    transform: translateY(100px);
-}
-.sec{
-    position: relative;
-    padding: 100px;
-    background-color: #1c0522;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec h3{
-    font-size: 5.5em ;
-    margin-bottom: 50px;
-    color: #fff;
-}
-.sec p{
-    font-size: 1.2em;
-    color: #fff;
-    width: 70%;
-}
-.sec #profile-pic{
-    margin: 20px;
-    width: 350px;
-}
-
-
-/* header above  */
-
-
-section {
-    position: relative;
-    width: 100%;
-    height: 106.5vh;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-section::before{
-    content:'';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#1c0522,transparent);
-    z-index: 100;
-}
-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-section img#moon {
-    mix-blend-mode: screen;
-}
-section img#mountains_front{
-    z-index: 10;
-  
 }
 #text{
     position: absolute;
@@ -215,7 +123,7 @@ section img#mountains_front{
 
 }
 
-.prof-pic {
+.profile-pic {
     margin-bottom: -4px;
 }
 
@@ -236,27 +144,27 @@ section img#mountains_front{
 
 }
 
-h1#rh1 {
+h1 {
     font-family: 'Noto Serif', serif;
     font-size: 35px;
 }
 
-h2#rh2{
+h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
 
-h3#rh3 {
+h3 {
     font-family: 'Zilla Slab', serif;
     font-size: 40px;
 }
 
-h4#rh4{
+h4 {
     font-family: 'Zilla Slab', serif; 
     font-size: 70px;
 }
 
-h5#rh5{
+h5{
     font-family: 'Noto Serif', serif;
     font-size: 30px;
     color: #616161;
@@ -304,7 +212,6 @@ h5#rh5{
     color: #615181;
 }
 
-li#rli{
+li {
     font-family: 'Open Sans', sans-serif;
 }
-

@@ -208,7 +208,7 @@ a#Goback {
     min-height: 1000px;
 }
 
-/* .resume-background {
+.resume-background {
     background-color:#1D0523;
     height: 600px;
     width: auto;
@@ -222,6 +222,7 @@ a#Goback {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
     
 
 }
@@ -252,6 +253,7 @@ a#Goback {
 h1#rh1 {
     font-family: 'Noto Serif', serif;
     font-size: 15.5px;
+    margin-left: ;
 }
 
 h2#rh2 {
@@ -326,4 +328,4 @@ li#rli {
     font-family: 'Open Sans', sans-serif;
     font-size: 7.5px;
 
-} */
+}
